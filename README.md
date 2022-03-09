@@ -1,5 +1,7 @@
 # dvbzap
-Tune/zap DVB card with mumudvb configuration file/variables
+Tune/zap DVB card with mumudvb configuration file/variables.
+
+(c) 2022 TVEpg.eu (l2mrroberto@gmail.com)
 
 # description
 ~~~~~~~~~~~~
