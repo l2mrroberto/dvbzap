@@ -932,7 +932,7 @@ char *liben50221_error_to_str_descr(int error)
 void print_info ()
 {
 	fprintf (stderr,
-			"DVBSCAN Version "
+			"DVBZAP Version "
 			VERSION "\n"
 #if DVB_API_VERSION >= 5
 			"Built with support for DVB API Version %d.%d.\n"
@@ -960,7 +960,7 @@ void usage (char *name)
 {
 	fprintf (stderr, "dvbzap is a program who tune DVB adapter.\n"
 			"Usage: %s [options] \n"
-			"-c, --config : Config file\n"
+			"-c, --config : MuMuDVB Config file\n"
 			"-l, --list-cards : List the DVB cards and exit\n"
 			"-a, --card            : The DVB card to use (overrided by the configuration file)\n"
 			"-f, --freq            : config freq\n"

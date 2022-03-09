@@ -121,10 +121,6 @@ void init_tune_v(tune_p_t *tune_p)
 int read_tuning_configuration(tune_p_t *tuneparams, char *substring)
 {
 
-			log_message( log_module,  MSG_ERROR,			"Config issue : %s\n",substring);
-	if (!strcmp (substring, "freq"))
-			log_message( log_module,  MSG_ERROR,			"Config issue2 : %s\n",substring);
-
 	char delimiteurs[] = CONFIG_FILE_SEPARATOR;
 	if (!strcmp (substring, "sat_number"))
 	{
