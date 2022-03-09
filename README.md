@@ -23,7 +23,7 @@ Usage: dvbzap [options]
 -q           : Less verbose
 -h, --help   : Help
 
-DVBSCAN Version 0.1
+DVBZAP Version 0.1
 Built with support for DVB API Version 5.10.
 Built with support for DVB-T2.
 ---------
