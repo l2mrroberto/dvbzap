@@ -146,10 +146,6 @@ void parse_cmd_line(int argc, char *argv[],char *(*conf_filename),tune_p_t *tune
 		    char delimiteurs[] = CONFIG_FILE_SEPARATOR;
 		    char * substring = strtok (conf_line, delimiteurs);
 
-		    
-		    //strncpy (*conf_line, optarg, strlen (long_options[option_index].name)strlen (optarg) + 2);
-
-		    log_message( log_module, MSG_ERROR,"option %s with arg %s; %s line %d\n%s\n", long_options[option_index].name,optarg,__FILE__,__LINE__,conf_line);
 		int iRet;
                 if((iRet=read_tuning_configuration(tune_p, substring))) //Read the line concerning the tuning parameters
                 {
@@ -158,10 +154,6 @@ void parse_cmd_line(int argc, char *argv[],char *(*conf_filename),tune_p_t *tune
                 }
 		free(conf_line);
 
-//	          printf("long option %s", long_options[option_index].name);
-//	          if (optarg)
-//	             printf(" with arg %s", optarg);
-//	          printf("\n");
 	    	break;
 		case 'c':
 		*conf_filename = (char *) malloc (strlen (optarg) + 1);
